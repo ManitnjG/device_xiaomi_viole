@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2019-2020 The LineageOS Project
-# Copyright (C) 2023 The Evolution X Project
+# Copyright (C) 2023 The lineage X Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,12 +8,11 @@
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common lineage X stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_PICO_GAPPS := true
 TARGET_ENABLE_BLUR := false
-EVO_BUILD_TYPE := OFFICIAL
 
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
@@ -25,7 +24,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_violet
+PRODUCT_NAME := lineage_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
